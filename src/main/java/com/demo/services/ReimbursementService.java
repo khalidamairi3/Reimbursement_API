@@ -1,7 +1,5 @@
 package com.demo.services;
 
-import com.demo.dto.ReimbursementRequest;
-import com.demo.entities.Manager;
 import com.demo.entities.Reimbursement;
 import com.demo.repositories.ReimbursementRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,11 +7,16 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
-
+/**
+ * reimbursement service to provide all needed services to the controllers
+ */
 @Service
 public class ReimbursementService {
-    @Autowired
     ReimbursementRepository reimbursementRepository;
+    @Autowired
+    public void setReimbursementRepository(ReimbursementRepository reimbursementRepository){
+        this.reimbursementRepository = reimbursementRepository;
+    }
 
 
     public List<Reimbursement> getAllByManagerId(int id){

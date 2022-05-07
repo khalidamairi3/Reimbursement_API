@@ -5,6 +5,9 @@ import lombok.*;
 import javax.persistence.*;
 import java.util.List;
 
+/**
+ * the manager entity and its attributes as they are expected to be stored in the database
+ */
 @Entity
 @Table(name="manager")
 @Getter

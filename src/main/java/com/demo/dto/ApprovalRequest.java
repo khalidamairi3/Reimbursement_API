@@ -1,5 +1,8 @@
 package com.demo.dto;
 
+/**
+ * class tp represent the expected reimbursement (approval/denial) request
+ */
 public class ApprovalRequest {
     private int reimbursementId;
     private int managerId;

@@ -5,6 +5,9 @@ import lombok.*;
 
 import javax.persistence.*;
 
+/**
+ * the reimbursement entity and its attributes as they are expected to be stored in the database
+ */
 
 @Entity
 @Table(name="reimbursement")

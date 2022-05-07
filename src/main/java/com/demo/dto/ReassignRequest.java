@@ -1,5 +1,8 @@
 package com.demo.dto;
 
+/**
+ * class to represent the expected reimbursement reassign request
+ */
 public class ReassignRequest {
     private int managerId;
     private int reimbursementId;

@@ -7,6 +7,9 @@ import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
 
+/**
+ * the manager repository to perform database operations
+ */
 @Repository
 public interface ManagerRepository extends JpaRepository<Manager,Integer> {
 

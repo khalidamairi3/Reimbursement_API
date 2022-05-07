@@ -1,5 +1,8 @@
 package com.demo.dto;
 
+/**
+ * the expected email request body to send to the email api
+ */
 public class EmailRequest {
     private String toEmail;
     private String subject;

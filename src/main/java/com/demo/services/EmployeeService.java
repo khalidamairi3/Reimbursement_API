@@ -8,10 +8,16 @@ import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
+/**
+ * employee service to provide all needed services to the controllers
+ */
 @Service
 public class EmployeeService {
+    private EmployeeRepository employeeRepository;
     @Autowired
-    EmployeeRepository employeeRepository;
+    public void setEmployeeRepository(EmployeeRepository employeeRepository){
+        this.employeeRepository = employeeRepository;
+    }
 
     public Optional<Employee> getByEmployeeId(int employeeID){
         return employeeRepository.findById(employeeID);

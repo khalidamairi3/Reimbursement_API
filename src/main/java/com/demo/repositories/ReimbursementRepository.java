@@ -9,6 +9,9 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+/**
+ * the reimbursement repository to perform database operations
+ */
 @Repository
 public interface ReimbursementRepository extends JpaRepository <Reimbursement,Integer> {
     List <Reimbursement> findAllByManagerId(int id);
